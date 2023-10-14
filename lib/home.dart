@@ -17,14 +17,9 @@ class _HomePageState extends State<HomePage> {
         title: Text("Mission 1"),
         backgroundColor: Color(0xFF92A8D1),
       ),
-      // floatingActionButton: FloatingActionButton(
-      //   onPressed: () {},
-      //   child: Icon(Icons.favorite),
-      //   backgroundColor: Colors.white,
-      //   shape: CircleBorder(),
-      // ),
       body: Stack(
         children: [
+          // gradient color set up
           Container(
             height: double.infinity,
             width: double.infinity,
@@ -36,11 +31,14 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
           ),
+
+          // contents
           Container(
             child: Stack(
               children: [
                 Column(
                   children: [
+                    // header picture
                     Flexible(
                       flex: 2,
                       child: Container(
@@ -51,6 +49,8 @@ class _HomePageState extends State<HomePage> {
                         ),
                       ),
                     ),
+
+                    // 4 square pictures
                     Flexible(
                       flex: 1,
                       child: Container(
@@ -102,10 +102,13 @@ class _HomePageState extends State<HomePage> {
                         ),
                       ),
                     ),
+
+                    // title and text
                     Flexible(
                       flex: 4,
                       child: Column(
                         children: [
+                          // title
                           Text(
                             "SEVENTEEN's 11th Mini Album",
                             style: TextStyle(
@@ -113,6 +116,8 @@ class _HomePageState extends State<HomePage> {
                               fontWeight: FontWeight.bold,
                             ),
                           ),
+
+                          // scrollable text
                           Expanded(
                             child: Container(
                               margin: EdgeInsets.only(
@@ -140,7 +145,6 @@ class _HomePageState extends State<HomePage> {
                                     "The new mini album follows 10th mini album, FML. The set earned the K-pop group its highest charting releasing on the Billboard 200 to date, peaking at No. 2 and spending a total of nine weeks on the tally. The album’s lead single, “Super,” peaked at No. 18 on the Billboard Global Excl. U.S. chart, and spent a total of 17 weeks on the tally.",
                                     textAlign: TextAlign.justify,
                                   ),
-                                  // Add as many paragraphs as you need.
                                 ],
                               ),
                             ),
@@ -150,6 +154,8 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ],
                 ),
+
+                // floating action button - favorite
                 Stack(
                   children: [
                     Positioned(
