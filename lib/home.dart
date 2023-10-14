@@ -31,7 +31,14 @@ class _HomePageState extends State<HomePage> {
             Flexible(
               flex: 2,
               child: Container(
-                child: Text("HELLO 1"),
+                // margin: EdgeInsets.all(8),
+                width: double.infinity,
+                child: ClipRRect(
+                  child: Image.asset(
+                    'images/album.jpeg',
+                    fit: BoxFit.fill,
+                  ),
+                ),
               ),
             ),
             Flexible(
