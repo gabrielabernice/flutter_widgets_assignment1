@@ -14,7 +14,13 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Mission 1"),
+        title: Text(
+          "saythename",
+          style: TextStyle(
+            // fontWeight: FontWeight.bold,
+            color: Colors.white,
+          ),
+        ),
         backgroundColor: Color(0xFF92A8D1),
       ),
       body: Stack(
@@ -54,47 +60,59 @@ class _HomePageState extends State<HomePage> {
                     Flexible(
                       flex: 1,
                       child: Container(
-                        margin: EdgeInsets.only(top: 8, bottom: 8),
+                        margin: EdgeInsets.only(top: 8),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
                           children: [
                             Flexible(
                               flex: 1,
                               child: ClipRRect(
-                                borderRadius: BorderRadius.circular(5),
-                                child: Image.asset(
-                                  'images/group1.jpeg',
-                                  fit: BoxFit.fill,
+                                borderRadius: BorderRadius.circular(7),
+                                child: AspectRatio(
+                                  aspectRatio: 1.0,
+                                  child: Image.asset(
+                                    'images/group1.jpeg',
+                                    fit: BoxFit.cover,
+                                  ),
                                 ),
                               ),
                             ),
                             Flexible(
                               flex: 1,
                               child: ClipRRect(
-                                borderRadius: BorderRadius.circular(5),
-                                child: Image.asset(
-                                  'images/group2.jpeg',
-                                  fit: BoxFit.fill,
+                                borderRadius: BorderRadius.circular(7),
+                                child: AspectRatio(
+                                  aspectRatio: 1.0,
+                                  child: Image.asset(
+                                    'images/group2.jpeg',
+                                    fit: BoxFit.cover,
+                                  ),
                                 ),
                               ),
                             ),
                             Flexible(
                               flex: 1,
                               child: ClipRRect(
-                                borderRadius: BorderRadius.circular(5),
-                                child: Image.asset(
-                                  'images/group3.jpeg',
-                                  fit: BoxFit.fill,
+                                borderRadius: BorderRadius.circular(7),
+                                child: AspectRatio(
+                                  aspectRatio: 1.0,
+                                  child: Image.asset(
+                                    'images/group3.jpeg',
+                                    fit: BoxFit.cover,
+                                  ),
                                 ),
                               ),
                             ),
                             Flexible(
                               flex: 1,
                               child: ClipRRect(
-                                borderRadius: BorderRadius.circular(5),
-                                child: Image.asset(
-                                  'images/group4.jpeg',
-                                  fit: BoxFit.fill,
+                                borderRadius: BorderRadius.circular(7),
+                                child: AspectRatio(
+                                  aspectRatio: 1.0,
+                                  child: Image.asset(
+                                    'images/group4.jpeg',
+                                    fit: BoxFit.cover,
+                                  ),
                                 ),
                               ),
                             ),
